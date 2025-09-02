@@ -1,0 +1,881 @@
+<!DOCTYPE html><html lang="pt-br" translate="no"><head><script async="" src="https://www.clarity.ms/tag/qudv7xrsgb"></script><script>
+  window.pixelId = "683c98f09a73a8ab732af8b3";
+  var a = document.createElement("script");
+  a.setAttribute("async", "");
+  a.setAttribute("defer", "");
+  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+  document.head.appendChild(a);
+</script><script async="" defer="" src="js/pixel.js"></script><meta http-equiv="content-type" content="text/html;charset=UTF-8">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+
+<script src="js/latest.js" data-utmify-prevent-subids="" async="" defer=""></script>
+<script src="js/estados.js" data-utmify-prevent-subids="" async="" defer=""></script>
+
+	<meta name="google" content="notranslate">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" type="image/jpg" href="images/rqrqF18ZwsmypgJeOtaojEg4cfzi9xWcBBf4j884.png">
+	<title>Brutus Burguers - Faça seu pedido!</title>
+	<meta name="description" content="Faça seu pedido online na Brutus Burguers. Acesse e peça agora pelo delivery food!">
+	<link type="text/css" href="css/delivry.css" rel="stylesheet">
+	<link type="text/css" href="css/newcss.css" rel="stylesheet">
+	<script src="js/confetti.browser.min.js"></script>
+
+	<meta name="theme-color" content="#000000">
+	<meta name="apple-mobile-web-app-capacity" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar" content="#000000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000000">
+	<meta name="apple-mobile-web-app-title" content="Brutus Burguers">
+	<!-- SweetAlert2 -->
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	
+	<!-- UTM Tracker -->
+	<script src="js/utm-tracker.js"></script>
+
+	<script src="js/latest_1.js" data-utmify-prevent-subids="" async="" defer=""></script>
+    <script src="../cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-xcod-sck="" data-utmify-prevent-subids="" async="" defer=""></script>
+	<script type="text/javascript">
+		(function(c,l,a,r,i,t,y){
+			c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+			t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+			y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+		})(window, document, "clarity", "script", "qudv7xrsgb");
+	</script>
+</head>
+
+<body>
+	
+	<!-- <div id="confetti-container" class="confetti-container"></div> -->
+
+	<div id="opacidade" class="fechar"></div>
+	<div>
+		<header id="topo">
+			<div class="cover main" style="background-image: url(images/cover7.png);">
+				<div class="logo">
+					<figure>
+						<img src="images/rqrqF18ZwsmypgJeOtaojEg4cfzi9xWcBBf4j884.png" alt="Brutus Burguers" title="Brutus Burguers">
+					</figure>
+				</div>
+				<div class="borda"></div>
+			</div>
+			<div class="container">
+				<div class="info">
+					<h1>Brutus Burguers</h1>
+					<div class="icones">
+					<a href="https://www.instagram.com/brutus-burguersoficial/" title="Instagram" target="_blank">
+							<i class="fab fa-instagram"></i> 
+						</a>
+						<a class="informacoes" href="#info" title="Info">
+							<i class="fa-solid fa-info"></i>
+						</a>
+					</div>
+					<div class="detalhe">
+						<span><i class="fa-solid fa-coins"></i> Pedido Mínimo
+							<b>R$ 10,00</b></span>
+						<div>
+							<span><i class="fa-solid fa-motorcycle"></i> <b>30-50</b> min</span> • <span style="color: #077c22">Grátis</span>
+						</div>
+					</div>
+					<div class="detalhe" style="gap: 3px;">
+						<i class="fa fa-map-marker-alt" aria-hidden="true"></i><span id="localCidade">Cidade</span> -
+						<span id="localEstado">UF</span> • 4,5km de você
+					</div>
+					<div class="detalhe">
+						<i class="fa fa-star" aria-hidden="true"></i><b>4,9</b> (2.136 avaliações)
+					</div>
+						<div class="aberto">
+						<i class="fa-solid fa-circle btn-pisca"></i> 
+						<span id="status-loja">ABERTO</span> 
+						<i class="fa-regular fa-clock horario" id="icone-relogio" style="display: none;"></i> 
+						<span class="horario" id="horario-fechamento" style="display: none;"></span>
+					</div>
+					
+					<script>
+						function atualizarStatusLoja() {
+							const agora = new Date();
+							const horas = agora.getHours();
+							const statusLoja = document.getElementById("status-loja");
+							const iconeRelogio = document.getElementById("icone-relogio");
+							const horarioFechamento = document.getElementById("horario-fechamento");
+					
+							if (horas >= 0 && horas < 2) {
+								statusLoja.textContent = "ABERTO";
+								horarioFechamento.textContent = "até 02:00";
+								iconeRelogio.style.display = "inline";
+								horarioFechamento.style.display = "inline";
+							} else if (horas >= 8 && horas < 23) {
+								statusLoja.textContent = "ABERTO";
+								iconeRelogio.style.display = "none";
+								horarioFechamento.style.display = "none";
+							} else {
+								statusLoja.textContent = "ABERTO";
+								iconeRelogio.style.display = "none";
+								horarioFechamento.style.display = "none";
+							}
+						}
+					
+						atualizarStatusLoja();
+					</script>
+				</div>
+			</div>
+			<div id="menuCategorias">
+				<div class="container">
+					<div class="categorias">
+						<a href="#pague-1-leve-2" title="Combos">
+							Combos
+						</a>
+						<a href="#hamburguer-artesanal" title="Combos - Zero Açúcar"> Hambúrguer Artesanal </a>
+					</div>
+				</div>
+				<div id="prize-display" class="prize-status"></div>
+			</div>
+		</header>
+		<main id="lista" style="padding-bottom: 0;">
+			<div class="container">
+				<div class="alert alert-success">
+					<b>Entrega Grátis</b> para <b id="localCidade">sua região</b>!
+				</div>
+				<div class="alert alert-success" style="color: rgb(0, 0, 0);outline: 2px solid #000000;">
+					Aproveite nossa <b>promoção com preços irresistíveis</b> tão bons quanto um hambúrguer 🖤
+				</div>
+				<div id="pague-1-leve-2" class="categoria">
+					<h2>Combos</h2>
+					<div class="produtos">
+						<div class="item">
+							<a class="disponivel" href="mania-individual/index.html">
+								<div class="texto">
+									<h3>Combo Brutus chespy bacon individual</h3>
+									<span>Brutus Cheddar Bacon + Batata 150g + Refrigerante 350ml</span>
+									de <span class="precoPromocao">R$ 39,80</span> por
+									<span class="preco"> R$ 26,90 </span>
+								</div>
+								<div class="fotoProduto">
+									<figure>
+										<img src="images/H2DdSer7JuTDtJZ4hGKk3luWXt8iq7LE3yhy9mIt.png" width="110px" height="110px" loading="lazy" alt="(Apenas Retirada) Brutus Burguers">
+									</figure>
+								</div>
+							</a>
+						</div>
+						<div class="item">
+							<a class="disponivel" href="combo-casal/index.html">
+								<div class="texto">
+									<h3>2 Brutus Duplo Bacon</h3>
+									<span>2 Brutus Duplo Bacon + 2 Batatas 500g + 2 Refrigerantes 350ml</span>
+									de <span class="precoPromocao">R$ 53,80</span> por
+									<span class="preco"> R$ 37,90 </span>
+								</div>
+								<div class="fotoProduto">
+									<figure>
+										<img src="images/7oy6GhE1mwf9GKh0jNax2BL0dwzbGpGqU6SxE6OI.png" width="110px" height="110px" loading="lazy" alt="(Apenas Retirada) Brutus Burguers">
+									</figure>
+								</div>
+							</a>
+						</div>
+						<div class="item">
+							<a class="disponivel pulsar" href="mania-familia/index.html" style="border: 2px solid #077c22;">
+								<div class="texto">
+									<span style="
+										color: #5c0e0e; background: #f2cdcd; padding: 2px 2px; margin-bottom: 2px;
+										border-radius: 8px; text-align: center;"><b>MAIS VENDIDO 🖤</b></span>
+									<h3>Combo Família 4 Cheddar Brutus Bacon</h3>
+									<span>4 Brutus Cheddar Bacon + Batata 500g + Refrigerante 2L</span>
+									<span style="
+									color: #474747; background: #e8e8e8; padding: 10px 10px; margin-bottom: 2px; margin-top: 2px;
+									border-radius: 8px; text-align: left;">Mais que o dobro de carne do Combo 1 por apenas <b>R$7 a mais</b>!</span>
+									de <span class="precoPromocao">R$ 75,80</span> por
+									<span class="preco" style="font-size: 20px;"> <b style="background: #077c22; color: white; border-radius: 8px; padding: 0px 4px;">R$ 57,90 </b> </span>
+									<span><i>A maioria dos clientes escolhe esse porque é o melhor
+											custo-benefício!</i></span>
+									<span class="estoque" style="margin-top: 4px;">🔥 Apenas <b style="background: red; color: white; border-radius: 8px; padding: 0px 4px;"><span id="estoqueCombo">8</span>
+											combo(s)</b> com esse preço especial</span>
+								</div>
+								<div class="fotoProduto">
+									<figure>
+										<img src="images/gO68Ys9TAzzUSfj5JhJ2EVwqJNRGTX1TeCtkv3I1.png" width="110px" height="110px" loading="lazy" alt="(Apenas Retirada) Brutus Burguers">
+									</figure>
+								</div>
+							</a>
+						</div>
+						<div class="alert alert-success" style="color: red;outline: 2px solid red; background-color: rgb(255, 217, 217);">
+							<b>A promoção vai acabar em:</b>
+							<div class="countdown">
+								<div class="box">
+									<span id="minutes">00</span>
+									<p>Minutos</p>
+								</div>
+								<div class="box">
+									<span id="seconds">00</span>
+									<p>Segundos</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div id="hamburguer-artesanal" class="categoria">
+					<h2>Hambúrguer Artesanal</h2>
+					<div class="produtos">
+						<div class="item">
+							<a class="disponivel" href="classic-mania/index.html">
+								<div class="texto">
+									<h3>Brutus Chespy Bacon</h3>
+									<span>2 Adicionais Grátis</span>
+									por
+									<span class="preco"> R$ 23,90 </span>
+								</div>
+								<div class="fotoProduto">
+									<figure>
+										<img src="images/BrutusBurguersChespyBacon.png" width="110px" height="110px" loading="lazy" alt="(Apenas Retirada) Brutus Burguers">
+									</figure>
+								</div>
+							</a>
+						</div>
+						<div class="item">
+							<a class="disponivel" href="mania-atomic/index.html">
+								<div class="texto">
+									<h3>Brutus Triple Bacon</h3>
+									<span>2 Adicionais Grátis</span>
+									por
+									<span class="preco"> R$ 27,90 </span>
+								</div>
+								<div class="fotoProduto">
+									<figure>
+										<img src="images/BrutusBurguersTripleBacon.png" width="110px" height="110px" loading="lazy" alt="(Apenas Retirada) Brutus Burguers">
+									</figure>
+								</div>
+							</a>
+						</div>
+						<div class="item">
+							<a class="disponivel" href="bruxa-do-mar/index.html">
+								<div class="texto">
+									<h3>Brutus Salada</h3>
+									<span>2 Adicionais Grátis</span>
+									por
+									<span class="preco" style="font-size: 20px;"> R$ 26,90 </span>
+								</div>
+								<div class="fotoProduto">
+									<figure>
+										<img src="images/BrutusBurguersSalada.png" width="110px" height="110px" loading="lazy" alt="(Apenas Retirada) Brutus Burguers">
+									</figure>
+								</div>
+							</a>
+						</div>
+						<div class="item">
+							<a class="disponivel" href="cole-oyl/index.html">
+								<div class="texto">
+									<h3>Double Bacon Smash</h3>
+									<span>2 Adicionais Grátis</span>
+									por
+									<span class="preco">R$ 26,90</span>
+								</div>
+								<div class="fotoProduto">
+									<figure>
+										<img src="images/DoubleBaconSmash.png" width="110px" height="110px" loading="lazy" alt="(Apenas Retirada) Brutus Burguers">
+									</figure>
+								</div>
+							</a>
+						</div>
+						<div class="item">
+							<a class="disponivel" href="brutus-burguers-cheddar/index.html">
+								<div class="texto">
+									<h3>Brutus Cheddar</h3>
+									<span>2 Adicionais Grátis</span>
+									por
+									<span class="preco"> R$ 23,90 </span>
+								</div>
+								<div class="fotoProduto">
+									<figure>
+										<img src="images/BrutusBurguersCheddar.png" width="110px" height="110px" loading="lazy" alt="(Apenas Retirada) Brutus Burguers">
+									</figure>
+								</div>
+							</a>
+						</div>
+						<div class="item">
+							<a class="disponivel" href="brutus-burguers-gorgonzola-melt/index.html">
+								<div class="texto">
+									<h3>Brutus Gorgonzola Melt</h3>
+									<span>2 Adicionais Grátis</span>
+									por
+									<span class="preco"> R$ 21,90 </span>
+								</div>
+								<div class="fotoProduto">
+									<figure>
+										<img src="images/BrutusBurguersGorgonzolaMelt.png" width="110px" height="110px" loading="lazy" alt="(Apenas Retirada) Brutus Burguers">
+									</figure>
+								</div>
+							</a>
+						</div>
+						<div class="item">
+							<a class="disponivel" href="brutus-burguers-picanha/index.html">
+								<div class="texto">
+									<h3>Brutus Picanha</h3>
+									<span>2 Adicionais Grátis</span>
+									por
+									<span class="preco"> R$ 27,90 </span>
+								</div>
+								<div class="fotoProduto">
+									<figure>
+										<img src="images/BrutusBurguersPicanha.png" width="110px" height="110px" loading="lazy" alt="(Apenas Retirada) Brutus Burguers">
+									</figure>
+								</div>
+							</a>
+						</div>
+						<div class="item">
+							<a class="disponivel" href="brutus-burguers-brigadeiro/index.html">
+								<div class="texto">
+									<h3>Brutus Brigadeiro</h3>
+									<span>2 Adicionais Grátis</span>
+									por
+									<span class="preco"> R$ 19,90 </span>
+								</div>
+								<div class="fotoProduto">
+									<figure>
+										<img src="images/BrutusBurguersBrigadeiro.png" width="110px" height="110px" loading="lazy" alt="(Apenas Retirada) Brutus Burguers">
+									</figure>
+								</div>
+							</a>
+						</div>
+						<div class="item">
+							<a class="disponivel" href="brutus-burguers-moda-da-casa/index.html">
+								<div class="texto">
+									<h3>Brutus Moda da Casa</h3>
+									<span>2 Adicionais Grátis</span>
+									por
+									<span class="preco"> R$ 24,90 </span>
+								</div>
+								<div class="fotoProduto">
+									<figure>
+										<img src="images/BrutusBurguersModaDaCasa.png" width="110px" height="110px" loading="lazy" alt="(Apenas Retirada) Brutus Burguers">
+									</figure>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+<div id="toast" class="toast">
+	<div class="toast-title">Parabéns!</div>
+	<div id="toast-description" class="toast-description">Você ganhou um prêmio!</div>
+</div>
+
+		<main id="lista">
+			<div class="container">
+				<div class="alert">
+					<b style="font-size: 20px;">4,8</b><br>
+					<i class="fa fa-star" aria-hidden="true" style="color: goldenrod;"></i>
+					<i class="fa fa-star" aria-hidden="true" style="color: goldenrod;"></i>
+					<i class="fa fa-star" aria-hidden="true" style="color: goldenrod;"></i>
+					<i class="fa fa-star" aria-hidden="true" style="color: goldenrod;"></i>
+					<i class="fa fa-star-half-alt" aria-hidden="true" style="color: goldenrod;"></i>
+					<br>
+					<b>136 avaliações</b> • últimos 90 dias
+					<br>
+					<label style="color:gray">1.007 avaliações no total</label>
+					<!-- <br>
+					<img style="width: 100%; height: auto;" src="img/super-restaurante.webp" alt="Super Restaurante"> -->
+				</div>
+				<div class="categoria">
+					<div class="produtos">
+						
+						<!-- Avaliação 1 -->
+						<div class="item" style="display: flex; align-items: center; justify-content: space-between; padding: 10px; border-bottom: 1px solid #ddd;">
+							<div class="avaliacao" style="flex-grow: 1;">
+								<h3 style="margin: 0; font-size: 16px; color: #333;">Cinthia</h3>
+								<div style="display: flex; align-items: center;">
+									<span style="font-weight: bold; font-size: 14px; margin-right: 5px;">5,0</span>
+									<span class="estrelas" style="display: flex;">
+										<i class="fa fa-star" style="color: goldenrod; font-size: 14px;"></i>
+										<i class="fa fa-star" style="color: goldenrod; font-size: 14px;"></i>
+										<i class="fa fa-star" style="color: goldenrod; font-size: 14px;"></i>
+										<i class="fa fa-star" style="color: goldenrod; font-size: 14px;"></i>
+										<i class="fa fa-star" style="color: goldenrod; font-size: 14px;"></i>
+									</span>
+									<span class="data" style="margin-left: auto; font-size: 12px; color: #888;"></span>
+								</div>
+								<p style="margin: 5px 0 0; font-size: 14px; color: #555;">Surpreendentemente gostoso.</p>
+							</div>
+							<div class="fotoProduto" style="margin-left: 15px;">
+								<figure style="margin: 0;">
+									<img src="images/r1.jpg" width="70px" height="70px" loading="lazy" style="border-radius: 8px; cursor: pointer;" onclick="expandirImagem(this)">
+								</figure>
+							</div>
+						</div>
+				
+				
+						<!-- Avaliação 3 -->
+						<div class="item" style="display: flex; align-items: center; justify-content: space-between; padding: 10px; border-bottom: 1px solid #ddd;">
+							<div class="avaliacao" style="flex-grow: 1;">
+								<h3 style="margin: 0; font-size: 16px; color: #333;">Lucas</h3>
+								<div style="display: flex; align-items: center;">
+									<span style="font-weight: bold; font-size: 14px; margin-right: 5px;">5,0</span>
+									<span class="estrelas" style="display: flex;">
+										<i class="fa fa-star" style="color: goldenrod; font-size: 14px;"></i>
+										<i class="fa fa-star" style="color: goldenrod; font-size: 14px;"></i>
+										<i class="fa fa-star" style="color: goldenrod; font-size: 14px;"></i>
+										<i class="fa fa-star" style="color: goldenrod; font-size: 14px;"></i>
+										<i class="fa fa-star" style="color: goldenrod; font-size: 14px;"></i>
+									</span>
+									<span class="data" style="margin-left: auto; font-size: 12px; color: #888;"></span>
+								</div>
+								<p style="margin: 5px 0 0; font-size: 14px; color: #555;">Sinceramente? Melhor custo-benefício que já vi! Lanche bom, preço sensacional e entrega rápida.</p>
+							</div>
+							<div class="fotoProduto" style="margin-left: 15px;">
+								<figure style="margin: 0;">
+									<img src="images/r2.png" width="70px" height="70px" loading="lazy" style="border-radius: 8px; cursor: pointer;" onclick="expandirImagem(this)">
+								</figure>
+							</div>
+						</div>
+						<!-- Avaliação 3 -->
+						<div class="item" style="display: flex; align-items: center; justify-content: space-between; padding: 10px; border-bottom: 1px solid #ddd;">
+							<div class="avaliacao" style="flex-grow: 1;">
+								<h3 style="margin: 0; font-size: 16px; color: #333;">Luiza</h3>
+								<div style="display: flex; align-items: center;">
+									<span style="font-weight: bold; font-size: 14px; margin-right: 5px;">5,0</span>
+									<span class="estrelas" style="display: flex;">
+										<i class="fa fa-star" style="color: goldenrod; font-size: 14px;"></i>
+										<i class="fa fa-star" style="color: goldenrod; font-size: 14px;"></i>
+										<i class="fa fa-star" style="color: goldenrod; font-size: 14px;"></i>
+										<i class="fa fa-star" style="color: goldenrod; font-size: 14px;"></i>
+										<i class="fa fa-star" style="color: goldenrod; font-size: 14px;"></i>
+									</span>
+									<span class="data" style="margin-left: auto; font-size: 12px; color: #888;"></span>
+								</div>
+								<p style="margin: 5px 0 0; font-size: 14px; color: #555;">A batata frita estava maravilhosa, bem sequinha, perfeita, com um molho gostoso de alho, não deixe de experimentar... Os hambúrgueres também estavam muito bons, a carne no ponto perfeito. Pedirei mais vezes</p>
+							</div>
+							<div class="fotoProduto" style="margin-left: 15px;">
+								<figure style="margin: 0;">
+									<img src="images/r3.png" width="70px" height="70px" loading="lazy" style="border-radius: 8px; cursor: pointer;" onclick="expandirImagem(this)">
+								</figure>
+							</div>
+						</div>
+				<!-- Avaliação 3 -->
+				<div class="item" style="display: flex; align-items: center; justify-content: space-between; padding: 10px; border-bottom: 1px solid #ddd;">
+					<div class="avaliacao" style="flex-grow: 1;">
+						<h3 style="margin: 0; font-size: 16px; color: #333;">Ronald</h3>
+						<div style="display: flex; align-items: center;">
+							<span style="font-weight: bold; font-size: 14px; margin-right: 5px;">5,0</span>
+							<span class="estrelas" style="display: flex;">
+								<i class="fa fa-star" style="color: goldenrod; font-size: 14px;"></i>
+								<i class="fa fa-star" style="color: goldenrod; font-size: 14px;"></i>
+								<i class="fa fa-star" style="color: goldenrod; font-size: 14px;"></i>
+								<i class="fa fa-star" style="color: goldenrod; font-size: 14px;"></i>
+								<i class="fa fa-star" style="color: goldenrod; font-size: 14px;"></i>
+							</span>
+							<span class="data" style="margin-left: auto; font-size: 12px; color: #888;"></span>
+						</div>
+						<p style="margin: 5px 0 0; font-size: 14px; color: #555;">Quando vi o preço achei q ia ser pequeno, mas me enganei! a qualidade é absurda.</p>
+					</div>
+					<div class="fotoProduto" style="margin-left: 15px;">
+						<figure style="margin: 0;">
+							<img src="images/r4.jpg" width="70px" height="70px" loading="lazy" style="border-radius: 8px; cursor: pointer;" onclick="expandirImagem(this)">
+						</figure>
+					</div>
+				</div>
+				<!-- Avaliação 3 -->
+				<div class="item" style="display: flex; align-items: center; justify-content: space-between; padding: 10px; border-bottom: 1px solid #ddd;">
+					<div class="avaliacao" style="flex-grow: 1;">
+						<h3 style="margin: 0; font-size: 16px; color: #333;">Carlla</h3>
+						<div style="display: flex; align-items: center;">
+							<span style="font-weight: bold; font-size: 14px; margin-right: 5px;">5,0</span>
+							<span class="estrelas" style="display: flex;">
+								<i class="fa fa-star" style="color: goldenrod; font-size: 14px;"></i>
+								<i class="fa fa-star" style="color: goldenrod; font-size: 14px;"></i>
+								<i class="fa fa-star" style="color: goldenrod; font-size: 14px;"></i>
+								<i class="fa fa-star" style="color: goldenrod; font-size: 14px;"></i>
+								<i class="fa fa-star" style="color: goldenrod; font-size: 14px;"></i>
+							</span>
+							<span class="data" style="margin-left: auto; font-size: 12px; color: #888;"></span>
+						</div>
+						<p style="margin: 5px 0 0; font-size: 14px; color: #555;"> A comida fresquinha, saborosa, chegou rapidamente e estava quentinha! </p>
+					</div>
+					<div class="fotoProduto" style="margin-left: 15px;">
+						<figure style="margin: 0;">
+							<img src="images/r5.jpg" width="70px" height="70px" loading="lazy" style="border-radius: 8px; cursor: pointer;" onclick="expandirImagem(this)">
+						</figure>
+					</div>
+				</div>
+				<!-- Avaliação 3 -->
+				<div class="item" style="display: flex; align-items: center; justify-content: space-between; padding: 10px; border-bottom: 1px solid #ddd;">
+					<div class="avaliacao" style="flex-grow: 1;">
+						<h3 style="margin: 0; font-size: 16px; color: #333;">Gregory</h3>
+						<div style="display: flex; align-items: center;">
+							<span style="font-weight: bold; font-size: 14px; margin-right: 5px;">5,0</span>
+							<span class="estrelas" style="display: flex;">
+								<i class="fa fa-star" style="color: goldenrod; font-size: 14px;"></i>
+								<i class="fa fa-star" style="color: goldenrod; font-size: 14px;"></i>
+								<i class="fa fa-star" style="color: goldenrod; font-size: 14px;"></i>
+								<i class="fa fa-star" style="color: goldenrod; font-size: 14px;"></i>
+								<i class="fa fa-star" style="color: goldenrod; font-size: 14px;"></i>
+							</span>
+							<span class="data" style="margin-left: auto; font-size: 12px; color: #888;"></span>
+						</div>
+						<p style="margin: 5px 0 0; font-size: 14px; color: #555;">Uma delícia como sempre a comida, parabéns para o pessoal da cozinha.</p>
+					</div>
+					<div class="fotoProduto" style="margin-left: 15px;">
+						<figure style="margin: 0;">
+							<img src="images/r6.png" width="70px" height="70px" loading="lazy" style="border-radius: 8px; cursor: pointer;" onclick="expandirImagem(this)">
+						</figure>
+					</div>
+				</div>
+				<!-- Avaliação 3 -->
+				<div class="item" style="display: flex; align-items: center; justify-content: space-between; padding: 10px; border-bottom: 1px solid #ddd;">
+					<div class="avaliacao" style="flex-grow: 1;">
+						<h3 style="margin: 0; font-size: 16px; color: #333;">Gustavo</h3>
+						<div style="display: flex; align-items: center;">
+							<span style="font-weight: bold; font-size: 14px; margin-right: 5px;">5,0</span>
+							<span class="estrelas" style="display: flex;">
+								<i class="fa fa-star" style="color: goldenrod; font-size: 14px;"></i>
+								<i class="fa fa-star" style="color: goldenrod; font-size: 14px;"></i>
+								<i class="fa fa-star" style="color: goldenrod; font-size: 14px;"></i>
+								<i class="fa fa-star" style="color: goldenrod; font-size: 14px;"></i>
+								<i class="fa fa-star" style="color: goldenrod; font-size: 14px;"></i>
+							</span>
+							<span class="data" style="margin-left: auto; font-size: 12px; color: #888;"></span>
+						</div>
+						<p style="margin: 5px 0 0; font-size: 14px; color: #555;">Bom, barato e entrega rápida. Não tem erro, semana que vem peço de novo</p>
+					</div>
+					<div class="fotoProduto" style="margin-left: 15px;">
+						<figure style="margin: 0;">
+							<img src="images/gustavo001.png" width="70px" height="70px" loading="lazy" style="border-radius: 8px; cursor: pointer;" onclick="expandirImagem(this)">
+						</figure>
+					</div>
+				</div>
+				<!-- Avaliação 3 -->
+				<div class="item" style="display: flex; align-items: center; justify-content: space-between; padding: 10px; border-bottom: 1px solid #ddd;">
+					<div class="avaliacao" style="flex-grow: 1;">
+						<h3 style="margin: 0; font-size: 16px; color: #333;">Julia</h3>
+						<div style="display: flex; align-items: center;">
+							<span style="font-weight: bold; font-size: 14px; margin-right: 5px;">5,0</span>
+							<span class="estrelas" style="display: flex;">
+								<i class="fa fa-star" style="color: goldenrod; font-size: 14px;"></i>
+								<i class="fa fa-star" style="color: goldenrod; font-size: 14px;"></i>
+								<i class="fa fa-star" style="color: goldenrod; font-size: 14px;"></i>
+								<i class="fa fa-star" style="color: goldenrod; font-size: 14px;"></i>
+								<i class="fa fa-star" style="color: goldenrod; font-size: 14px;"></i>
+							</span>
+							<span class="data" style="margin-left: auto; font-size: 12px; color: #888;"></span>
+						</div>
+						<p style="margin: 5px 0 0; font-size: 14px; color: #555;">Pedi pela primeira vez e td mundo gostou, vamos pedir mais!</p>
+					</div>
+					<div class="fotoProduto" style="margin-left: 15px;">
+						<figure style="margin: 0;">
+							<img src="images/r8.png" width="70px" height="70px" loading="lazy" style="border-radius: 8px; cursor: pointer;" onclick="expandirImagem(this)">
+						</figure>
+					</div>
+				</div>
+				<!-- Avaliação 3 -->
+				<div class="item" style="display: flex; align-items: center; justify-content: space-between; padding: 10px; border-bottom: 1px solid #ddd;">
+					<div class="avaliacao" style="flex-grow: 1;">
+						<h3 style="margin: 0; font-size: 16px; color: #333;">Jussara</h3>
+						<div style="display: flex; align-items: center;">
+							<span style="font-weight: bold; font-size: 14px; margin-right: 5px;">5,0</span>
+							<span class="estrelas" style="display: flex;">
+								<i class="fa fa-star" style="color: goldenrod; font-size: 14px;"></i>
+								<i class="fa fa-star" style="color: goldenrod; font-size: 14px;"></i>
+								<i class="fa fa-star" style="color: goldenrod; font-size: 14px;"></i>
+								<i class="fa fa-star" style="color: goldenrod; font-size: 14px;"></i>
+								<i class="fa fa-star" style="color: goldenrod; font-size: 14px;"></i>
+							</span>
+							<span class="data" style="margin-left: auto; font-size: 12px; color: #888;"></span>
+						</div>
+						<p style="margin: 5px 0 0; font-size: 14px; color: #555;">Burguer top, amei</p>
+					</div>
+					<div class="fotoProduto" style="margin-left: 15px;">
+						<figure style="margin: 0;">
+							<img src="images/r9.jpg" width="70px" height="70px" loading="lazy" style="border-radius: 8px; cursor: pointer;" onclick="expandirImagem(this)">
+						</figure>
+					</div>
+				</div>
+				<!-- Avaliação 3 -->
+				<div class="item" style="display: flex; align-items: center; justify-content: space-between; padding: 10px; border-bottom: 1px solid #ddd;">
+					<div class="avaliacao" style="flex-grow: 1;">
+						<h3 style="margin: 0; font-size: 16px; color: #333;">Isabely</h3>
+						<div style="display: flex; align-items: center;">
+							<span style="font-weight: bold; font-size: 14px; margin-right: 5px;">5,0</span>
+							<span class="estrelas" style="display: flex;">
+								<i class="fa fa-star" style="color: goldenrod; font-size: 14px;"></i>
+								<i class="fa fa-star" style="color: goldenrod; font-size: 14px;"></i>
+								<i class="fa fa-star" style="color: goldenrod; font-size: 14px;"></i>
+								<i class="fa fa-star" style="color: goldenrod; font-size: 14px;"></i>
+								<i class="fa fa-star" style="color: goldenrod; font-size: 14px;"></i>
+							</span>
+							<span class="data" style="margin-left: auto; font-size: 12px; color: #888;"></span>
+						</div>
+						<p style="margin: 5px 0 0; font-size: 14px; color: #555;">Gostei muito Sério kkk</p>
+					</div>
+					<div class="fotoProduto" style="margin-left: 15px;">
+						<figure style="margin: 0;">
+							<img src="images/Isabely.png" width="70px" height="70px" loading="lazy" style="border-radius: 8px; cursor: pointer;" onclick="expandirImagem(this)">
+						</figure>
+					</div>
+				</div>
+				<!-- Avaliação 3 -->
+				<div class="item" style="display: flex; align-items: center; justify-content: space-between; padding: 10px; border-bottom: 1px solid #ddd;">
+					<div class="avaliacao" style="flex-grow: 1;">
+						<h3 style="margin: 0; font-size: 16px; color: #333;">Kaue</h3>
+						<div style="display: flex; align-items: center;">
+							<span style="font-weight: bold; font-size: 14px; margin-right: 5px;">5,0</span>
+							<span class="estrelas" style="display: flex;">
+								<i class="fa fa-star" style="color: goldenrod; font-size: 14px;"></i>
+								<i class="fa fa-star" style="color: goldenrod; font-size: 14px;"></i>
+								<i class="fa fa-star" style="color: goldenrod; font-size: 14px;"></i>
+								<i class="fa fa-star" style="color: goldenrod; font-size: 14px;"></i>
+								<i class="fa fa-star" style="color: goldenrod; font-size: 14px;"></i>
+							</span>
+							<span class="data" style="margin-left: auto; font-size: 12px; color: #888;"></span>
+						</div>
+						<p style="margin: 5px 0 0; font-size: 14px; color: #555;">Muito bom, esta de parabéns</p>
+					</div>
+					<div class="fotoProduto" style="margin-left: 15px;">
+						<figure style="margin: 0;">
+							<img src="images/487236140_18489440980001294_6838037624147660354_n.png" width="70px" height="70px" loading="lazy" style="border-radius: 8px; cursor: pointer;" onclick="expandirImagem(this)">
+						</figure>
+					</div>
+				</div>
+				<!-- Avaliação 3 -->
+				<div class="item" style="display: flex; align-items: center; justify-content: space-between; padding: 10px; border-bottom: 1px solid #ddd;">
+					<div class="avaliacao" style="flex-grow: 1;">
+						<h3 style="margin: 0; font-size: 16px; color: #333;">Ana</h3>
+						<div style="display: flex; align-items: center;">
+							<span style="font-weight: bold; font-size: 14px; margin-right: 5px;">5,0</span>
+							<span class="estrelas" style="display: flex;">
+								<i class="fa fa-star" style="color: goldenrod; font-size: 14px;"></i>
+								<i class="fa fa-star" style="color: goldenrod; font-size: 14px;"></i>
+								<i class="fa fa-star" style="color: goldenrod; font-size: 14px;"></i>
+								<i class="fa fa-star" style="color: goldenrod; font-size: 14px;"></i>
+								<i class="fa fa-star" style="color: goldenrod; font-size: 14px;"></i>
+							</span>
+							<span class="data" style="margin-left: auto; font-size: 12px; color: #888;"></span>
+						</div>
+						<p style="margin: 5px 0 0; font-size: 14px; color: #555;">Comida saborosa, batata sequinha e crocante e boa porção.</p>
+					</div>
+					<div class="fotoProduto" style="margin-left: 15px;">
+						<figure style="margin: 0;">
+							<img src="images/r12.jpg" width="70px" height="70px" loading="lazy" style="border-radius: 8px; cursor: pointer;" onclick="expandirImagem(this)">
+						</figure>
+					</div>
+				</div>
+				
+				<!-- Modal da Imagem -->
+				<div id="modalImagem" style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.8); justify-content: center; align-items: center;">
+					<img id="imagemExpandida" style="max-width: 90%; max-height: 90%; border-radius: 10px;">
+				</div>
+				
+				<script>
+					// Atualiza a data em todas as avaliações automaticamente
+					function formatarDataHoje() {
+						let hoje = new Date();
+						let dia = String(hoje.getDate()).padStart(2, '0');
+						let mes = String(hoje.getMonth() + 1).padStart(2, '0'); // Janeiro é 0!
+						let ano = hoje.getFullYear();
+						return `${dia}/${mes}/${ano}`;
+					}
+				
+					document.querySelectorAll('.data-atual').forEach(el => {
+						el.innerText = formatarDataHoje();
+					});
+				
+					// Função para expandir a imagem
+					function expandirImagem(img) {
+						let modal = document.getElementById("modalImagem");
+						let imagemExpandida = document.getElementById("imagemExpandida");
+						imagemExpandida.src = img.src;
+						modal.style.display = "flex";
+				
+						// Fecha ao clicar fora da imagem
+						modal.onclick = function() {
+							modal.style.display = "none";
+						}
+					}
+				</script>
+					<div class="alert alert-success" style="color: red;outline: 2px solid red; background-color: rgb(255, 217, 217);
+						padding: 20px 10px;">
+						<b>A promoção vai acabar em:</b>
+						<div class="countdown">
+							<div class="box">
+								<span id="minutes">00</span>
+								<p>Minutos</p>
+							</div>
+							<div class="box">
+								<span id="seconds">00</span>
+								<p>Segundos</p>
+							</div>
+						</div>
+						<a href="#pague-1-leve-2" style="background-color: white; border-radius: 8px;
+						padding: 4px 10px; color:#000000">Clique Para Ver Burgures em Promoção 🖤</a>
+					</div>
+				</div>
+			</div>
+		</div></main>
+		<div id="produto"></div>
+		<div id="info">
+			<a class="fechar" href="#fechar"><i class="far fa-times-circle fa-2x"></i></a>
+			<h2>Tipos de Entrega</h2>
+			<i class="fa-solid fa-motorcycle"></i> Entrega Motoboy<br>
+			<i class="fa-solid fa-box"></i> Retirada<br>
+			<br>
+			<h2>Formas de Pagamento</h2>
+			<i class="fa-regular fa-circle-check"></i> Pix<br>
+			<br>
+			<h2>Endereço</h2>
+			<span id="localCidade">cidade</span> - <span id="localEstado">UF</span><br>
+			<br>
+			<h2>Áreas de Entrega</h2>
+			<h3><span id="localCidade">cidade</span> - <span id="localEstado">UF</span></h3>
+			GRÁTIS (hoje)<br>
+			<br>
+		</div>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/delivry.js"></script>
+	<script type="text/javascript" src="js/countdown.js"></script>
+	<script src="js/all.js" data-auto-replace-svg="nest" defer="" type="text/javascript"></script>
+	<script src="js/sweetalert.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	
+	<!-- Script para atualizar contador do carrinho -->
+	<script>
+		function atualizarContadorCarrinho() {
+			try {
+				const carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+				const contador = document.getElementById('carrinho-contador');
+				
+				if (contador) {
+					const totalItens = carrinho.reduce((total, item) => total + (item.quantidade || 1), 0);
+					
+					if (totalItens > 0) {
+						contador.textContent = totalItens;
+						contador.classList.remove('hidden');
+					} else {
+						contador.classList.add('hidden');
+					}
+				}
+			} catch (error) {
+				console.log('Erro ao atualizar contador do carrinho:', error);
+			}
+		}
+		
+		// Atualizar contador quando a página carrega
+		document.addEventListener('DOMContentLoaded', atualizarContadorCarrinho);
+		
+		// Atualizar contador quando o localStorage muda
+		window.addEventListener('storage', function(e) {
+			if (e.key === 'carrinho') {
+				atualizarContadorCarrinho();
+			}
+		});
+		
+		// Verificar periodicamente se o carrinho mudou
+		setInterval(atualizarContadorCarrinho, 1000);
+	</script>
+	
+	<!-- Botão flutuante do carrinho -->
+	<div id="floating-cart-btn" class="floating-cart-btn">
+		<i class="fa-solid fa-shopping-cart"></i>
+		<span>Ir para o carrinho</span>
+		<span class="cart-counter hidden" id="floating-cart-counter">0</span>
+	</div>
+	
+	<style>
+		.floating-cart-btn {
+			position: fixed;
+			bottom: 20px;
+			right: 20px;
+			background: #000;
+			color: white;
+			padding: 15px 20px;
+			border-radius: 50px;
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			cursor: pointer;
+			box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+			transition: all 0.3s ease;
+			z-index: 1000;
+			font-weight: bold;
+			font-size: 14px;
+		}
+		
+		.floating-cart-btn:hover {
+			transform: translateY(-2px);
+			box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+		}
+		
+		.floating-cart-btn .cart-counter {
+			background: #ff4444;
+			color: white;
+			border-radius: 50%;
+			width: 20px;
+			height: 20px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 12px;
+			font-weight: bold;
+			min-width: 20px;
+		}
+		
+		.floating-cart-btn .cart-counter.hidden {
+			display: none;
+		}
+		
+		@media (max-width: 768px) {
+			.floating-cart-btn {
+				bottom: 15px;
+				right: 15px;
+				padding: 12px 16px;
+				font-size: 13px;
+			}
+		}
+	</style>
+	
+	<script>
+		// Função para atualizar contador do botão flutuante
+		function atualizarContadorBotaoFlutuante() {
+			try {
+				const carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+				const contador = document.getElementById('floating-cart-counter');
+				
+				if (contador) {
+					const totalItens = carrinho.reduce((total, item) => total + (item.quantidade || 1), 0);
+					
+					if (totalItens > 0) {
+						contador.textContent = totalItens;
+						contador.classList.remove('hidden');
+					} else {
+						contador.classList.add('hidden');
+					}
+				}
+			} catch (error) {
+				console.log('Erro ao atualizar contador do botão flutuante:', error);
+			}
+		}
+		
+		// Adicionar evento de clique no botão flutuante
+		document.getElementById('floating-cart-btn').addEventListener('click', function() {
+			window.location.href = 'carrinho/';
+		});
+		
+		// Atualizar contador do botão flutuante quando a página carrega
+		document.addEventListener('DOMContentLoaded', atualizarContadorBotaoFlutuante);
+		
+		// Atualizar contador quando o localStorage muda
+		window.addEventListener('storage', function(e) {
+			if (e.key === 'carrinho') {
+				atualizarContadorBotaoFlutuante();
+			}
+		});
+		
+		// Verificar periodicamente se o carrinho mudou
+		setInterval(atualizarContadorBotaoFlutuante, 1000);
+	</script>
+	
+	<script src="js/new.js"></script>
+	<script src="js/display-prize.js"></script>
+
+</body></html>
